@@ -43,8 +43,8 @@ FROM customers c
 WHERE email 
 LIKE '%.org' ;
 
--- List the first name, last name, and email for all customers from the 202 area code
-SELECT first_name, last_name, email  
+-- List the first name, last name, and phone number for all customers from the 202 area code
+SELECT first_name, last_name, phone  
 FROM customers c 
 WHERE phone  
 LIKE '1-(202%' ;
