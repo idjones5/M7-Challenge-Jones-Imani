@@ -1,13 +1,16 @@
+
+use northwind;
+
 -- What are the categories of products in the database?
 SELECT category
-FROM products p 
+FROM products p ;
  
 
 -- What products are made by Dell?
 SELECT *
 FROM products p 
 WHERE product_name
-LIKE '%Dell%'
+LIKE '%Dell%' ;
 
 
 -- List all the orders shipped to pennsylvania 
@@ -38,7 +41,7 @@ LIKE '%0' ;
 SELECT first_name, last_name, email  
 FROM customers c
 WHERE email 
-LIKE '%.edu' ;
+LIKE '%.org' ;
 
 -- List the first name, last name, and email for all customers from the 202 area code
 SELECT first_name, last_name, email  
